@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gifos</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <img id="logo" alt="logo" src="#" />
+          <img class="burguer-menu" alt="burguer menu" src="#" />
+          <div class="cover-menu">
+            <ul>
+              <li>
+                <a class="menu-item" id="shift-mode" href="#">modo nocturno</a>
+                <div class="menu-separator"></div>
+              </li>
+              <li>
+                <a id="favorite-url" class="menu-item" href="#">favoritos</a>
+                <div class="menu-separator"></div>
+              </li>
+              <li>
+                <a id="gifos-url" class="menu-item" href="#"
+                  >mis <span>gifos</span></a
+                >
+                <div class="menu-separator"></div>
+              </li>
+              <li class="plus-menu-item">
+                <a class="menu-item" href="#">
+                  <img
+                    id="create-gifo"
+                    src="./assets/button-crear-gifo.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div id="shift-container"></div>
+        <section class="community-gifos">
+          <h2>Trending GIFOS</h2>
+          <div class="community-message">
+            <span>Mira los últimos</span>
+            <span>GIFOS de nuestra comunidad</span>
+          </div>
+          <div class="gallery-container">
+            <div class="move-left-container">
+              <img class="move-left" alt="mover izquierda" src="#" />
+            </div>
+            <div class="trending-container"></div>
+            <div class="move-right-container">
+              <img class="move-right" alt="mover derecha" src="#" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="social-media-section">
+          <span class="share-text">Compartir en:</span>
+          <div class="social-media-icon">
+            <img
+              id="facebook"
+              src="./assets/icon_facebook.svg"
+              alt="Facebook"
+            />
+            <img id="twitter" src="./assets/icon-twitter.svg" alt="Twitter" />
+            <img
+              id="instagram"
+              src="./assets/icon_instagram.svg"
+              alt="Instragram"
+            />
+          </div>
+          <span class="copyright">© GIFOS 2021 All Rights Reserved.</span>
+        </div>
+      </footer>
+    </div>
+    <!-- Scripts -->
+    <script type="module" src="./scripts/app.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  </body>
+</html>

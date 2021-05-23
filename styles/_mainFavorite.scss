@@ -1,0 +1,177 @@
+.favorite {
+  padding-left: 6vw;
+  padding-right: 6vw;
+  .favorite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 28px;
+      height: 21px;
+    }
+    span {
+      @include gifos-font($first-font, $first-color, 20px, 700);
+      line-height: 30px;
+      margin-top: 7px;
+      text-transform: capitalize;
+    }
+  }
+  .favorite-list-section {
+    margin-top: 36px;
+    .favorite-grid {
+      display: flex;
+      flex-wrap: wrap;
+      .img-group {
+        margin-bottom: 1%;
+        margin-left: 2%;
+        img {
+          height: 40vw;
+          width: 40vw;
+        }
+        .img-cover {
+          display: none;
+        }
+      }
+    }
+    .more-favorite {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 78px;
+      span {
+        border: 2px solid $first-color;
+        border-radius: 25px;
+        @include gifos-font($first-font, $first-color, 13px, 700);
+        line-height: 1rem;
+        height: 50px;
+        padding: 17px 0;
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: middle;
+        width: 127px;
+        &:hover {
+          background: $first-color;
+          color: $second-color;
+        }
+      }
+    }
+    .empty-favorite-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-top: 30px;
+        content: url('../assets/icon-fav-sin-contenido.svg');
+        height: 100px;
+        width: 100px;
+      }
+      span {
+        @include gifos-font($first-font, $fav-text-color, 1rem, 700);
+        line-height: 18px;
+        margin-top: 23px;
+        text-align: center;
+        width: 70vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .favorite {
+    .favorite-list-section {
+      .favorite-grid {
+        .img-group {
+          position: relative;
+          img {
+            width: 27vw;
+            height: 27vw;
+            &:hover + .img-cover {
+              display: block;
+            }
+          }
+          .img-cover {
+            width: 28vw;
+            height: 28vw;
+            background: $first-color-opacity;
+            position: absolute;
+            top: 0;
+            display: none;
+            &:hover {
+              display: block;
+            }
+            .img-action-container {
+              display: flex;
+              justify-content: flex-end;
+              margin-right: 8px;
+              img {
+                margin-top: 10px;
+                width: 32px;
+                height: 32px;
+                margin-left: 8px;
+              }
+              .favorite-action {
+                content: url('../assets/icon-fav-active.svg');
+              }
+              .download-action {
+                content: url('../assets/icon-download.svg');
+                &:hover {
+                  content: url('../assets/icon-download-hover.svg');
+                }
+              }
+              .expand-action {
+                content: url('../assets/icon-max-normal.svg');
+                &:hover {
+                  content: url('../assets/icon-max-hover.svg');
+                }
+              }
+            }
+            .gifo-description {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              text-align: start;
+              margin-top: 80px;
+              margin-left: 20px;
+              .gifo-user {
+                width: 90%;
+                @include gifos-font($second-font, $second-color, 15px, 400);
+              }
+              .gifo-title {
+                margin-top: 10px;
+                text-align: start;
+                padding-top: 0;
+                width: 90%;
+                @include gifos-font($second-font, $second-color, 15px, 700);
+                line-height: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .favorite {
+    .favorite-list-section {
+      .favorite-grid {
+        .img-group {
+          margin-bottom: 2%;
+          img {
+            height: 20vw;
+            width: 20vw;
+          }
+          .img-cover {
+            height: 20vw;
+            width: 20vw;
+            .gifo-description {
+              margin-top: 140px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
