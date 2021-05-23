@@ -17,11 +17,11 @@
       left: 0;
       top: 20%;
       .camera-image {
-        content: url('/assets/camara.svg');
+        content: url("../assets/camara.svg");
         width: 90px;
       }
       .camera-light {
-        content: url('/assets/element-luz-camara.svg');
+        content: url("../assets/element-luz-camara.svg");
         width: 60px;
       }
     }
@@ -111,9 +111,9 @@
               width: 32px;
               height: 32px;
               cursor: pointer;
-              content: url('../assets/icon-download.svg');
+              content: url("../assets/icon-download.svg");
               &:hover {
-                content: url('../assets/icon-download-hover.svg');
+                content: url("../assets/icon-download-hover.svg");
               }
             }
             .link-action {
@@ -121,9 +121,9 @@
               height: 32px;
               margin-left: 5px;
               cursor: pointer;
-              content: url('../assets/icon-link-normal.svg');
+              content: url("../assets/icon-link-normal.svg");
               &:hover {
-                content: url('../assets/icon-link-hover.svg');
+                content: url("../assets/icon-link-hover.svg");
               }
             }
           }
@@ -131,10 +131,10 @@
             display: none;
           }
           .gif-status-loading {
-            content: url('../assets/loader.svg');
+            content: url("../assets/loader.svg");
           }
           .gif-status-done {
-            content: url('../assets/ok.svg');
+            content: url("../assets/ok.svg");
           }
           .gif-status-text {
             margin-top: 14px;
@@ -196,7 +196,7 @@
       }
 
       .movie {
-        content: url('/assets/pelicula.svg');
+        content: url("../assets/pelicula.svg");
         position: absolute;
         right: -130px;
         top: -30px;

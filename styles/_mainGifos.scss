@@ -59,7 +59,7 @@
       align-items: center;
       img {
         margin-top: 30px;
-        content: url('/assets/icon-mis-gifos-sin-contenido.svg');
+        content: url("../assets/icon-mis-gifos-sin-contenido.svg");
         height: 100px;
         width: 100px;
       }
@@ -131,21 +131,21 @@
               cursor: pointer;
             }
             .delete-action {
-              content: url('../assets/icon-trash-normal.svg');
+              content: url("../assets/icon-trash-normal.svg");
               &:hover {
-                content: url('../assets/icon-trash-hover.svg');
+                content: url("../assets/icon-trash-hover.svg");
               }
             }
             .download-action {
-              content: url('../assets/icon-download.svg');
+              content: url("../assets/icon-download.svg");
               &:hover {
-                content: url('../assets/icon-download-hover.svg');
+                content: url("../assets/icon-download-hover.svg");
               }
             }
             .expand-action {
-              content: url('../assets/icon-max-normal.svg');
+              content: url("../assets/icon-max-normal.svg");
               &:hover {
-                content: url('../assets/icon-max-hover.svg');
+                content: url("../assets/icon-max-hover.svg");
               }
             }
           }
@@ -171,7 +171,7 @@
         align-items: center;
         img {
           margin-top: 30px;
-          content: url('/assets/icon-mis-gifos-sin-contenido.svg');
+          content: url("../assets/icon-mis-gifos-sin-contenido.svg");
           height: 100px;
           width: 100px;
         }

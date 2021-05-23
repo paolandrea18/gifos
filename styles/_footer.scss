@@ -17,20 +17,21 @@ footer {
       img {
         height: 20px;
         width: 20px;
+        cursor: pointer;
       }
       #facebook {
         &:hover {
-          content: url('/assets/icon_facebook_hover.svg');
+          content: url("../assets/icon_facebook_hover.svg");
         }
       }
       #twitter {
         &:hover {
-          content: url('/assets/icon-twitter-hover.svg');
+          content: url("../assets/icon-twitter-hover.svg");
         }
       }
       #instagram {
         &:hover {
-          content: url('/assets/icon_instagram-hover.svg');
+          content: url("../assets/icon_instagram-hover.svg");
         }
       }
     }
